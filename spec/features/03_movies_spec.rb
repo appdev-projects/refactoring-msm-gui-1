@@ -206,7 +206,7 @@ describe "/movies/[MOVIE ID]" do
     deep_impact.title = "Deep Impact"
     deep_impact.description = "It's like evangelion."
     deep_impact.year = 1999
-    movie.duration = 95
+    deep_impact.duration = 95
     deep_impact.director_id = director.id
     deep_impact.save
 
