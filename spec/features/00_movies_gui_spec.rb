@@ -164,6 +164,7 @@ describe "/movies/[ID]" do
     movie.title = "Flubber"
     movie.image = "https://some.test/image-#{Time.now.to_i}.jpg"
     movie.description = "Green guy soft"
+    movie.director_id = director.id
     movie.save
 
     visit "/movies/#{movie.id}"
@@ -184,6 +185,7 @@ describe "/movies/[ID]" do
     movie.title = "Flubber"
     movie.image = "https://some.test/image-#{Time.now.to_i}.jpg"
     movie.description = "Green guy soft"
+    movie.director_id = director.id
     movie.save
 
     visit "/movies/#{movie.id}"
@@ -204,6 +206,7 @@ describe "/movies/[ID]" do
     movie.title = "Flubber"
     movie.image = "https://some.test/image-#{Time.now.to_i}.jpg"
     movie.description = "Green guy soft"
+    movie.director_id = director.id
     movie.save
 
     visit "/movies/#{movie.id}"
@@ -224,6 +227,7 @@ describe "/movies/[ID]" do
     movie.title = "Flubber"
     movie.image = "https://some.test/image-#{Time.now.to_i}.jpg"
     movie.description = "Green guy soft"
+    movie.director_id = director.id
     movie.save
 
     new_image = "https://some.test/image-1.jpg"
@@ -250,6 +254,7 @@ describe "/movies/[ID]" do
     movie.title = "Flubber"
     movie.image = "https://some.test/image-#{Time.now.to_i}.jpg"
     movie.description = "Green guy soft"
+    movie.director_id = director.id
     movie.save
 
     new_image = "https://some.test/image-1.jpg"
